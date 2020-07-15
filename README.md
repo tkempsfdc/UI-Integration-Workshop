@@ -6,7 +6,7 @@
 
 Do this in **terminal and VS Code**
 
-1. Open VS Code and open the terminal. In your projects folder, create SFDX project with` sfdx force:project:create —n canvas`
+1. Open VS Code and open the terminal. In your projects folder, create SFDX project with` sfdx force:project:create -n canvas`
 2. Change directory into the folder you just created
 3. Open project folder in VS Code `code .`
 4. In VS Code, bring up terminal. Confirm you are in the same directory where you created your sfdx project.

@@ -1,8 +1,12 @@
-### UI Workshop Instructions
+# UI Workshop Instructions
 
-## Setup
+## Canvas
 
-1. Open VS Code and open the terminal. In your projects folder, create SFDX project with` sfdx force:project:create —n SalesforceWorkshop`
+### Setup your Repo and Scratch Org
+
+Do this in **terminal and VS Code**
+
+1. Open VS Code and open the terminal. In your projects folder, create SFDX project with` sfdx force:project:create —n canvas`
 2. Change directory into the folder you just created
 3. Open project folder in VS Code `code .`
 4. In VS Code, bring up terminal. Confirm you are in the same directory where you created your sfdx project.
@@ -13,11 +17,6 @@
 9. Open your scratch org: `sfdx force:org:open` . Click the Astro (racoon kid) image, then settings. Note the username for your user.
 10. Set a password for your scratch org: `sfdx force:user:password:generate --targetusername <username>`
 11. Log out of the scratch org, then log back in with your username and password.
-
-
-sfdx force:user:display -u [test-l3rsumcrrmvb@example.com](mailto:test-l3rsumcrrmvb@example.com)
-
-## Canvas
 
 ### Set up App
 
@@ -140,6 +139,9 @@ Do this in ** VS Code**
 Do this in a **new browser tab**
 
 1. Navigate to https://github.com/tkempsfdc/ui-integration then scroll down and click the Deploy to Heroku button.
+2. Name your app
+3. After all checkmarks complete, click “Manage App”
+4. Leave this tab open in your browser
 
 ### Create a Connected App
 
@@ -178,10 +180,8 @@ Do this in your **browser tab with scratch org**
 2. Click New
 3. Add `https://[yourapp].herokuapp.com` (make sure to remove the / if you copy/paste) and save
 
-### Check out your Lightning Out app
+### Seeing the Result
 
 Do this in your **browser tab with Heroku**
 
 1. Test your Heroku app by clicking Open App. At this point, you will see the Lightning Out header but no components.
-
-

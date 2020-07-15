@@ -70,13 +70,14 @@ Do this in **VS Code**
 1. In VS Code, type Command+Shift+P and then type aura. Choose SFDX: Create Aura Component
 2. Enter a name and select the default directory
 3. Copy and paste the following code:
-4. `<aura:component implements="force:appHostable,forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes" access="global">  
+```
+<aura:component implements="force:appHostable,forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes" access="global">  
         <force:canvasApp width="100%" maxWidth="infinite" height="700px" maxHeight="infinite"
                             developerName="your-api-name-for-connected-app-here"/>
-    </aura:component>`
-
-1. Replace `your-api-name-for-connected-app-here` with the name of the Connected App you created
-2. Save the file, then push to your scratch org `sfdx force:source:push`
+    </aura:component>
+```
+4. Replace `your-api-name-for-connected-app-here` with the name of the Connected App you created
+5. Save the file, then push to your scratch org `sfdx force:source:push`
 
 ### Create the Lightning App
 
@@ -131,8 +132,7 @@ Do this in ** VS Code**
     <aura:dependency resource="c:createUIRecord"/>
 </aura:application>
 ```
-
-1. Push all files to your scratch org: `sfdx force:source:push`
+3. Push all files to your scratch org: `sfdx force:source:push`
 
 ### Deploy the Lightning Out App to Heroku
 
